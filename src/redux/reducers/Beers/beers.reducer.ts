@@ -23,17 +23,17 @@ const slice = createSlice({
   reducers: {
     // Get all beers:
     getAllRequest: (state: State) => {
-      state.beer = undefined;
+      state.beers = undefined;
       state.fetching = true;
       state.error = undefined;
     },
-    getAllSuccess: (state: State, action: PayloadAction<Beer>) => {
-      state.beer = action.payload;
+    getAllSuccess: (state: State, action: PayloadAction<Beer[]>) => {
+      state.beers = action.payload;
       state.fetching = false;
       state.error = undefined;
     },
     getAllFailure: (state: State, action: PayloadAction<string>) => {
-      state.beer = undefined;
+      state.beers = undefined;
       state.fetching = false;
       state.error = action.payload;
     }
