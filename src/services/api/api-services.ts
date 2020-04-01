@@ -4,7 +4,7 @@ import Axios, { AxiosResponse, AxiosError } from "axios";
 
 const getAllBeers = (): Promise<Beer[]> => {
   return new Promise((resolve, reject) => {
-    Axios.get(apiConstants.URL_ALL).then(
+    Axios.get(apiConstants.GET_ALL_BEERS).then(
       (res: AxiosResponse<any>) => {
         resolve(res.data as Beer[]);
       },
