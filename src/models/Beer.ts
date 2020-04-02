@@ -1,5 +1,5 @@
 export interface Beer {
-  id?: number;
+  id: number;
   name?: string;
   tagline?: string;
   description?: string;

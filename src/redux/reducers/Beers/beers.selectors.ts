@@ -5,10 +5,6 @@ export const getAllBeers = (state: AppState): Beer[] | undefined => {
   return state.beers.beers;
 };
 
-// export const getBeer = (state: AppState): Beer | undefined => {
-//   return state.beers.beer;
-// };
-
 export const getBeerError = (state: AppState): string | undefined => {
   return state.beers.error;
 };
